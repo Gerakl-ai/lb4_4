@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Булки от Герыча</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            background: #fffaf5;
+        }
+
+
+        
+        .shapka {
+            background: #8e44ad;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+            .shapka__title {
+                margin: 0;
+                font-size: 32px;
+            }
+
+            .shapka__slogan {
+                margin: 10px 0 0 0;
+            }
+
+
+        
+        .menu {
+            background: #2c3e50;
+            padding: 15px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 25px;
+        }
+
+            .menu__link {
+                color: white;
+                text-decoration: none;
+            }
+
+                .menu__link:hover {
+                    text-decoration: underline;
+                }
+
+
+        
+        .konteiner {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+
+        
+        .catalog__title {
+            text-align: center;
+            margin: 0 0 40px 0;
+            color: #2c3e50;
+        }
+
+        .catalog__grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+
+        
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+
+            
+            flex: 0 1 calc(25% - 20px);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+            .card__image {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .card__title {
+                margin: 12px 0 5px 0;
+                font-size: 16px;
+                color: #2c3e50;
+            }
+
+            .card__price {
+                color: #8e44ad;
+                font-weight: bold;
+                margin: 5px 0 15px 0;
+                font-size: 18px;
+            }
+
+            .card__button {
+                display: inline-block;
+                background: #8e44ad;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 4px;
+                margin-top: auto;
+            }
+
+                .card__button:hover {
+                    background: #6c2f86;
+                }
+
+
+        
+        .podval {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+            .podval__text {
+                margin: 5px 0;
+            }
+
+            .podval__link {
+                color: #dcb5ff;
+                text-decoration: none;
+            }
+
+                .podval__link:hover {
+                    text-decoration: underline;
+                }
+
+
+        
+
+        
+        @media (max-width: 1000px) {
+            .card {
+                flex: 0 1 calc(33.3% - 20px);
+            }
+        }
+
+        
+        @media (max-width: 750px) {
+            .card {
+                flex: 0 1 calc(50% - 15px);
+            }
+
+            .shapka {
+                padding: 25px 15px;
+            }
+
+            .shapka__title {
+                font-size: 26px;
+            }
+
+            .konteiner {
+                padding: 25px 15px;
+            }
+        }
+
+        
+        @media (max-width: 480px) {
+            .card {
+                flex: 0 1 100%;
+            }
+
+            .card__image {
+                height: 200px;
+            }
+
+            .menu {
+                gap: 8px 15px;
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .shapka__title {
+                font-size: 22px;
+            }
+
+            .catalog__title {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    
+    <header class="shapka">
+        <h1 class="shapka__title">💪 БУЛКИ ОТ ГЕРЫЧА</h1>
+        <p class="shapka__slogan">"Всё вкусное — в бицепс!"</p>
+    </header>
+
+    
+    <nav class="menu">
+        <a class="menu__link" href="index.html">Главная</a>
+        <a class="menu__link" href="product.html">Каталог</a>
+        <a class="menu__link" href="#">Спортпит</a>
+        <a class="menu__link" href="#">О Герыче</a>
+        <a class="menu__link" href="info.html">Оплата и доставка</a>
+    </nav>
+
+    
+    <main class="konteiner">
+
+        <section class="catalog">
+
+            <h2 class="catalog__title">Каталог анаболических десертов</h2>
+
+            <div class="catalog__grid">
+
+                <div class="card">
+                    <img class="card__image" src="1.png" alt="MASS-Булка Премиум">
+                    <h4 class="card__title">MASS-Булка Премиум</h4>
+                    <p class="card__price">390 ₽</p>
+                    <a class="card__button" href="item1.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="2.png" alt="Анаболический круассан">
+                    <h4 class="card__title">Анаболический круассан</h4>
+                    <p class="card__price">420 ₽</p>
+                    <a class="card__button" href="item2.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="3.png" alt="Power Heavy печенье">
+                    <h4 class="card__title">Power Heavy печенье</h4>
+                    <p class="card__price">350 ₽</p>
+                    <a class="card__button" href="item3.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="4.png" alt="Gains Donut">
+                    <h4 class="card__title">Gains Donut</h4>
+                    <p class="card__price">370 ₽</p>
+                    <a class="card__button" href="item4.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="5.png" alt="Mass Builder маффин">
+                    <h4 class="card__title">Mass Builder маффин</h4>
+                    <p class="card__price">410 ₽</p>
+                    <a class="card__button" href="item5.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="6.jpg" alt="Protein Brownie Titan">
+                    <h4 class="card__title">Protein Brownie Titan</h4>
+                    <p class="card__price">430 ₽</p>
+                    <a class="card__button" href="item6.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="7.jpg" alt="Синабон Roll Bulk">
+                    <h4 class="card__title">Синабон Roll Bulk</h4>
+                    <p class="card__price">390 ₽</p>
+                    <a class="card__button" href="item7.html">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <img class="card__image" src="8.jpg" alt="Protein Waffle Stack">
+                    <h4 class="card__title">Protein Waffle Stack</h4>
+                    <p class="card__price">410 ₽</p>
+                    <a class="card__button" href="item8.html">Подробнее</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    <footer class="podval">
+        <p class="podval__text">© 2025 Булки от Герыча. Работаем на твою МАССУ.</p>
+        <p class="podval__text">Наш зал: г. Владимир, ул. Горького, 87 (ВлГУ, 1 корпус)</p>
+        <p class="podval__text">
+            📞 <a class="podval__link" href="tel:+74922557788">+7 (4922) 55-77-88</a>
+            ✉️ <a class="podval__link" href="mailto:info@bulki-gericha.ru">info@bulki-gericha.ru</a>
+        </p>
+    </footer>
+
+</body>
+</html>
